@@ -16,7 +16,12 @@ license = {text = "MIT"}
 [project.urls]
 "Source Code" = "https://github.com/lambdaconcept/lambdalib"
 "Bug Tracker" = "https://github.com/lambdaconcept/lambdalib/issues"
+
+
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["wheel", "setuptools>=67.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "node-and-timestamp"
 
